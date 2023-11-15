@@ -2,12 +2,13 @@
 
 int main() {
     int lap = 4;
-    int speed = 358;
     int engine = 254;
     int wheels = 93;
     int steerinWheel = 49;
     int wind = 21;
     int rain = 17;
+    int speed = engine + wheels + steerinWheel - wind - rain;
+
     std::cout << "===================" << std::endl;
     std::cout << "Super race. Lap " << lap << std::endl;
     std::cout << "===================" << std::endl;
